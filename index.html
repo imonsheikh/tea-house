@@ -23,6 +23,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+        <!-- font awesome script cdn kit (alternative) -->
+        <!-- <script src="https://kit.fontawesome.com/762b0de83c.js" crossorigin="anonymous"></script> -->
+
+
     <!-- tailwind play cdn custom color   -->
     <script>
         tailwind.config = {
@@ -30,8 +34,12 @@
                 extend: {
                     colors: {
                         'gradient-start': '#FF8948',
-                        'gradient-end': '#F00',
+                        'gradient-end': '#FF0000'
                     }
+                    // fontFamily: {
+                    //       'manrope': ['Manrope', sans - serif]
+                    //     }
+                    
                 }
             }
         }
@@ -175,9 +183,9 @@
 
         <!-- Super client section  -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-20">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end py-20">
 
-            <div class="flex items-center lg:pr-28">
+            <div class="flex items-center ml-10 lg:pr-28">
               <div class="space-y-5">                 
                 <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> clients</h2>
                 <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority
@@ -203,7 +211,7 @@
                     </div>
                 </div>
                 <!-- current review  -->
-                <div class="absolute z-20 top-40 lg:-left-24 lg:w-[430px] p-10 rounded-lg bg-white">
+                <div class="absolute z-20 top-40 lg:-left-24 w-5/6 p-10 rounded-lg bg-white">
                     <img class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
                         src="./images/client.png" alt="">
                     <p>We are providing the best and suitable home insurance services for the people who are interested
@@ -231,6 +239,46 @@
             </div>
 
         </section>
+
+
+        <!-- new and events section starts  -->
+         <section class="my-16">
+             <div class="text-center w-9/12 mx-auto my-8">
+                <h1 class="text-4xl text-slate-700 font-semibold mb-4">News & Events</h1>
+                <p class="text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+             </div>
+             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+               <!-- card1 -->
+                <div class="border-2 rounded-xl p-4 space-y-0.5">
+                  <img class="w-full mb-5" src="./images/news-1.png" alt="">
+                  <p class="text-gray-700 lg:text-lg">Feb 05, 2027</p>
+                  <h1 class="text-xl font-semibold">Collecting 8 points for discount</h1>
+                  <p class="text-gray-700 lg:text-lg">There are many variations of passages of Lorem Ipsum available.</p>
+                  <h2 class="text-lg font-semibold">Learn More</h2>
+               </div>
+
+               <!-- card2 -->
+                <div class="border-2 rounded-xl p-4 space-y-0.5">
+                  <img class="w-full mb-5" src="./images/news-1.png" alt="">
+                  <p class="text-gray-700 lg:text-lg">Feb 05, 2027</p>
+                  <h1 class="text-xl font-semibold">Collecting 8 points for discount</h1>
+                  <p class="text-gray-700 lg:text-lg">There are many variations of passages of Lorem Ipsum available.</p>
+                  <h2 class="text-lg font-semibold">Learn More</h2>
+               </div>
+
+               <!-- card3 -->
+                <div class="border-2 rounded-xl p-4 space-y-0.5">
+                  <img class="w-full mb-5" src="./images/news-1.png" alt="">
+                  <p class="text-gray-700 lg:text-lg">Feb 05, 2027</p>
+                  <h1 class="text-xl font-semibold">Collecting 8 points for discount</h1>
+                  <p class="text-gray-700 lg:text-lg">There are many variations of passages of Lorem Ipsum available.</p>
+                  <h2 class="text-lg font-semibold">Learn More</h2>
+               </div>
+
+             </div>
+         </section>
+        <!-- new and events section ends  -->
     </main>
 
 
